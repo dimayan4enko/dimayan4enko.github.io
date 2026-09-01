@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>claude-sheets</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem;
+         font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  .sub { color: #666; margin-top: 0; }
+  code { background: rgba(127,127,127,.15); padding: .1em .35em; border-radius: 3px; }
+  footer { margin-top: 2.5rem; font-size: .9rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>claude-sheets</h1>
+<p class="sub">A personal command-line tool for working with my own Google Sheets.</p>
+
+<h2>What it does</h2>
+<p>
+  claude-sheets is a private, single-user utility. It uses the
+  <a href="https://developers.google.com/workspace/sheets/api">Google Sheets API</a>
+  to read and write spreadsheets belonging to the person who signs in — mainly to
+  inspect and repair spreadsheet formulas that are tedious to edit by hand.
+</p>
+
+<h2>Who it is for</h2>
+<p>
+  It is not a public service and has no user accounts of its own. It runs locally
+  on the owner's computer via the <code>gws</code> command-line tool.
+</p>
+
+<h2>Data access</h2>
+<p>
+  The application requests a single OAuth scope,
+  <code>https://www.googleapis.com/auth/spreadsheets</code>, which allows it to read
+  and edit spreadsheets in the signed-in account. It does not request access to Gmail,
+  Drive, Calendar, Contacts, or any other Google service.
+</p>
+
+<footer>
+  <a href="./privacy.html">Privacy policy</a>
+</footer>
+</body>
+</html>
